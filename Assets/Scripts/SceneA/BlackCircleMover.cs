@@ -4,12 +4,15 @@ public class BlackCircleMover : MonoBehaviour
 {
     // 이것은 실험용
 
+    // ㅊㅊ
+    // ㅊㅊ
+    // ㅊㅊ
 
     [Header("원 슬롯들 (드래그로 넣거나, Auto Collect 사용)")]
     [SerializeField] private CircleSlot[] slots;
 
     [Header("시작 검정 위치(인덱스)")]
-    [SerializeField] private int startBlackIndex = 0;
+    [SerializeField] private int startBIndex = 0;
 
     [Header("자동 수집(자식에서 CircleSlot 찾아서 채움)")]
     [SerializeField] private bool autoCollectFromChildren = true;
@@ -28,7 +31,7 @@ public class BlackCircleMover : MonoBehaviour
             return;
         }
 
-        blackIndex = Mathf.Clamp(startBlackIndex, 0, slots.Length - 1);
+        blackIndex = Mathf.Clamp(startBIndex, 0, slots.Length - 1);
         RefreshColors();
     }
 
