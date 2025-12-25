@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class BlackCircleMover : MonoBehaviour
 {
+    // 이것은 실험용
+
+
     [Header("원 슬롯들 (드래그로 넣거나, Auto Collect 사용)")]
     [SerializeField] private CircleSlot[] slots;
 
