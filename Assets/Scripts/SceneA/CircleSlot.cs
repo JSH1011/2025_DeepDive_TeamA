@@ -2,16 +2,18 @@ using UnityEngine;
 
 public class CircleSlot : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer sr;
+    // 이것은 실험용2
+
+    [SerializeField] private SpriteRenderer spriterender;
 
     private void Reset()
     {
-        sr = GetComponent<SpriteRenderer>();
+        spriterender = GetComponent<SpriteRenderer>();
     }
 
     public void SetBlack(bool isBlack)
     {
-        if (sr == null) sr = GetComponent<SpriteRenderer>();
-        sr.color = isBlack ? Color.black : Color.white;
+        if (spriterender == null) spriterender = GetComponent<SpriteRenderer>();
+        spriterender.color = isBlack ? Color.black : Color.white;
     }
 }
